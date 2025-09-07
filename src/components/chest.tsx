@@ -1,15 +1,13 @@
-import Image from 'next/image';
-
 export function Chest() {
   return (
     <div className="relative w-48 h-48 md:w-64 md:h-64">
-      <Image
-        src="https://i.ibb.co/ccR0GsgD/5850515966151215935.jpg"
-        alt="Clash 6900 Coin Logo"
-        width={256}
-        height={256}
-        className="object-contain"
-        data-ai-hint="clash royale coin"
+      <video
+        src="/clash.MOV"
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="object-contain w-full h-full"
       />
     </div>
   );
