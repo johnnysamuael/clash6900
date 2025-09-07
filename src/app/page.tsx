@@ -2,8 +2,21 @@
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { Chest } from '@/components/chest';
+import { MediaGallery } from '@/components/media-gallery';
+import fs from 'fs';
+import path from 'path';
 
 export default function Home() {
+  const photosDirectory = path.join(process.cwd(), 'public/photos');
+  let photoFiles: string[] = [];
+  try {
+    photoFiles = fs.readdirSync(photosDirectory).map(file => `/photos/${file}`);
+  } catch (error) {
+    console.error("Could not read photos directory:", error);
+    // You might want to create the public/photos directory
+  }
+
+
   return (
     <div className="flex min-h-screen flex-col bg-background font-mono">
       <main className="flex-1 flex flex-col items-center justify-between p-8 md:p-12">
@@ -21,7 +34,9 @@ export default function Home() {
             <Chest />
         </div>
 
-        <div className="flex flex-col sm:flex-row items-center gap-4">
+        {photoFiles.length > 0 && <MediaGallery photos={photoFiles} />}
+
+        <div className="flex flex-col sm:flex-row items-center gap-4 mt-8">
             <Button asChild variant="secondary" size="lg" className="bg-gray-800 text-white hover:bg-gray-700 border-2 border-gray-600 rounded-full px-8 py-3 text-lg font-bold">
                 <Link href="#" target="_blank">DEXSCREENER</Link>
             </Button>
