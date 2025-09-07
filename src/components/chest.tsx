@@ -7,7 +7,7 @@ export function Chest() {
         loop
         muted
         playsInline
-        className="object-contain w-full h-full"
+        className="object-contain w-full h-full rounded-lg border-4 border-primary/30 shadow-2xl shadow-primary/20"
       />
     </div>
   );
