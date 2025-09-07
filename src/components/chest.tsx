@@ -4,7 +4,7 @@ export function Chest() {
   return (
     <div className="relative w-48 h-48 md:w-64 md:h-64">
       <Image
-        src="https://i.imgur.com/gB32r8Q.png"
+        src="https://i.ibb.co/ccR0GsgD/5850515966151215935.jpg"
         alt="Clash 6900 Coin Logo"
         width={256}
         height={256}
