@@ -1,40 +1,35 @@
 
-import Image from 'next/image';
-import { Header } from '@/components/header';
-import { Footer } from '@/components/footer';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { Twitter } from 'lucide-react';
+import { Chest } from '@/components/chest';
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col bg-background">
-      <Header />
-      <main className="flex-1 flex flex-col items-center justify-center">
-        <section className="w-full">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter text-primary sm:text-5xl xl:text-7xl/none font-headline">
-                  $CLASH6900
+    <div className="flex min-h-screen flex-col bg-background font-mono">
+      <main className="flex-1 flex flex-col items-center justify-between p-8 md:p-12">
+        <div className="w-full flex justify-center text-center">
+            <div className="flex flex-col items-center space-y-4">
+                 <h1 className="text-5xl md:text-8xl font-bold tracking-widest text-white" style={{ textShadow: "4px 4px 0px hsl(var(--primary))" }}>
+                    $CLASH
                 </h1>
-                <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-                  The ultimate fan token for the Clash Royale universe. Join the arena.
-                </p>
-              </div>
-              <div className="space-y-2">
-                <Button asChild size="lg">
-                  <Link href="https://x.com" target="_blank">
-                    <Twitter className="mr-2 h-5 w-5" />
-                    Join the Community on X
-                  </Link>
-                </Button>
-              </div>
+                <p className="text-white text-sm md:text-base">The Clash Coin CTO</p>
+                <p className="text-accent-foreground/80 text-xs md:text-sm break-all bg-black/20 p-2 rounded-md">Fv73EXJBRfctJzLVC3P7uQP6er6JU8b4KtDr4LQFpump</p>
             </div>
-          </div>
-        </section>
+        </div>
+
+        <div className="my-8">
+            <Chest />
+        </div>
+
+        <div className="flex flex-col sm:flex-row items-center gap-4">
+            <Button asChild variant="secondary" size="lg" className="bg-gray-800 text-white hover:bg-gray-700 border-2 border-gray-600 rounded-full px-8 py-3 text-lg font-bold">
+                <Link href="#" target="_blank">DEXSCREENER</Link>
+            </Button>
+            <Button asChild variant="secondary" size="lg" className="bg-gray-800 text-white hover:bg-gray-700 border-2 border-gray-600 rounded-full px-8 py-3 text-lg font-bold">
+                <Link href="#" target="_blank">BUY NOW</Link>
+            </Button>
+        </div>
       </main>
-      <Footer />
     </div>
   );
 }

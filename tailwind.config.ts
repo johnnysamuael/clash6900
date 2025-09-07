@@ -11,9 +11,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ['"Space Grotesk"', 'sans-serif'],
-        headline: ['"Space Grotesk"', 'sans-serif'],
-        code: ['monospace'],
+        body: ['"VT323"', 'monospace'],
+        headline: ['"VT323"', 'monospace'],
+        mono: ['"VT323"', 'monospace'],
       },
       colors: {
         background: 'hsl(var(--background))',
