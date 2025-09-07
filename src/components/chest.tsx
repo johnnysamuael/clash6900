@@ -2,7 +2,7 @@ export function Chest() {
   return (
     <div className="relative w-48 h-48 md:w-64 md:h-64">
       <video
-        src="/clash.mp4"
+        src="/videos/clash.mp4"
         autoPlay
         loop
         muted
