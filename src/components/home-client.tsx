@@ -20,7 +20,7 @@ export function HomeClient() {
       <div className="w-full flex justify-center text-center">
         <div className="flex flex-col items-center space-y-4">
           <h1 className="text-5xl md:text-8xl font-bold tracking-widest text-white" style={{ textShadow: "4px 4px 0px hsl(var(--primary))" }}>
-            $CLASH
+            $CLASH6900
           </h1>
           <p className="text-white text-sm md:text-base">The Clash Royale Coin</p>
           <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
