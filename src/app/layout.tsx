@@ -4,8 +4,8 @@ import { Toaster } from "@/components/ui/toaster";
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Clash Coin Central',
-  description: 'The central hub for the $CLASH6900 coin.',
+  title: '$CLASH6900 Coin',
+  description: 'The ultimate fan token for the Clash Royale universe.',
 };
 
 export default function RootLayout({
