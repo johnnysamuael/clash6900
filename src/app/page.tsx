@@ -10,9 +10,9 @@ export default function Home() {
         <div className="w-full flex justify-center text-center">
             <div className="flex flex-col items-center space-y-4">
                  <h1 className="text-5xl md:text-8xl font-bold tracking-widest text-white" style={{ textShadow: "4px 4px 0px hsl(var(--primary))" }}>
-                    $CLASH
+                    $CLASH6900
                 </h1>
-                <p className="text-white text-sm md:text-base">The Clash Coin CTO</p>
+                <p className="text-white text-sm md:text-base">The Clash Royale Coin</p>
                 <p className="text-accent-foreground/80 text-xs md:text-sm break-all bg-black/20 p-2 rounded-md">Fv73EXJBRfctJzLVC3P7uQP6er6JU8b4KtDr4LQFpump</p>
             </div>
         </div>
