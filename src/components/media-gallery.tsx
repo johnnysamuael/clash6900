@@ -41,12 +41,23 @@ export function MediaGallery({ photos }: MediaGalleryProps) {
                 <div className="p-1">
                     <Card className="overflow-hidden">
                     <CardContent className="relative flex aspect-square items-center justify-center p-0">
-                        <Image
-                        src={src}
-                        alt={`Media image ${index + 1}`}
-                        fill
-                        className="object-contain"
-                        />
+                        {src.endsWith('.mp4') ? (
+                          <video
+                            src={src}
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            className="object-contain w-full h-full"
+                          />
+                        ) : (
+                          <Image
+                            src={src}
+                            alt={`Media image ${index + 1}`}
+                            fill
+                            className="object-contain"
+                          />
+                        )}
                     </CardContent>
                     </Card>
                 </div>
