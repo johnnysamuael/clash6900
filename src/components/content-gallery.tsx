@@ -40,7 +40,7 @@ export function ContentGallery({ photos }: ContentGalleryProps) {
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                 <div className="p-1">
                     <Card className="overflow-hidden">
-                    <CardContent className="relative flex items-center justify-center p-0">
+                    <CardContent className="relative flex aspect-square items-center justify-center p-0">
                         {src.endsWith('.mp4') ? (
                           <video
                             src={src}
