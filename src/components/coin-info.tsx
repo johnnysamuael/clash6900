@@ -46,6 +46,11 @@ export function CoinInfo() {
                     <p className="mt-4 text-muted-foreground md:text-xl">
                         This is more than a coin. It's an index on a cultural phenomenon.
                     </p>
+                    <p className="text-2xl mt-6 font-bold text-primary flex items-center justify-center gap-2">
+                        <Crown className="h-7 w-7" />
+                        Protect the bag, fight for the crown
+                        <Crown className="h-7 w-7" />
+                    </p>
                 </div>
 
                 <div className="mx-auto grid max-w-5xl items-start gap-8 sm:grid-cols-2 md:gap-12 lg:grid-cols-3 mt-12">
@@ -62,13 +67,6 @@ export function CoinInfo() {
                             </CardContent>
                         </Card>
                     ))}
-                </div>
-                 <div className="mt-16 text-center">
-                    <p className="text-2xl font-bold text-primary flex items-center justify-center gap-2">
-                        <Crown className="h-7 w-7" />
-                        Protect the bag, fight for the crown
-                        <Crown className="h-7 w-7" />
-                    </p>
                 </div>
             </div>
         </section>
