@@ -1,5 +1,5 @@
 
-import { MediaGallery } from '@/components/media-gallery';
+import { ContentGallery } from '@/components/content-gallery';
 import fs from 'fs';
 import path from 'path';
 import { HomeClient } from '@/components/home-client';
@@ -22,7 +22,7 @@ export default function Home() {
       <main className="flex-1 flex flex-col items-center p-8 md:p-12">
         <HomeClient />
         <CoinInfo />
-        {photoFiles.length > 0 && <MediaGallery photos={photoFiles} />}
+        {photoFiles.length > 0 && <ContentGallery photos={photoFiles} />}
       </main>
     </div>
   );
