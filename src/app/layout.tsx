@@ -4,7 +4,7 @@ import { Toaster } from "@/components/ui/toaster";
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: '$CLASH6900 Coin',
+  title: 'CLASH6900 Coin',
   description: 'The ultimate fan token for the Clash Royale universe.',
 };
 
