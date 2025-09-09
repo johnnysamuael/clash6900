@@ -3,6 +3,7 @@ import { MediaGallery } from '@/components/media-gallery';
 import fs from 'fs';
 import path from 'path';
 import { HomeClient } from '@/components/home-client';
+import { CoinInfo } from '@/components/coin-info';
 
 export default function Home() {
   const photoDir = path.join(process.cwd(), 'public', 'photos');
@@ -18,8 +19,9 @@ export default function Home() {
 
   return (
     <div className="flex min-h-screen flex-col bg-background font-mono">
-      <main className="flex-1 flex flex-col items-center justify-between p-8 md:p-12">
+      <main className="flex-1 flex flex-col items-center p-8 md:p-12">
         <HomeClient />
+        <CoinInfo />
         {photoFiles.length > 0 && <MediaGallery photos={photoFiles} />}
       </main>
     </div>
